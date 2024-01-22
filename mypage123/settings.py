@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'first'
+    'first',
+    'app_lesson_4'
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'mypage123.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['first/templates'],
+        'DIRS': ['first/templates', 'app_lesson_4/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
