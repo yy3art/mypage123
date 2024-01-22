@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page_name }}</title>
+    {% block static_load %}
+    {% endblock %}
 </head>
 <body>
     <header>
@@ -14,5 +16,9 @@
         {% block main %}
         {% endblock %}
     </main>
+    <footer>
+        {% block footer %}
+        {% endblock %}
+    </footer>
 </body>
 </html>

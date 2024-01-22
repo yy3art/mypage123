@@ -1,11 +1,18 @@
 {% extends 'base_htmls/base.html' %}
 
+{% block static_load %}
 {% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
 
 {% block header %}
-<div>
-    <h1>Заголовок1</h1>
-    <h2>Заголовок2</h2>
-    <img src="{% static 'img/123.jpg' %}"
-</div>
+<h1>Заголовок1</h1>
+<h2>Заголовок2</h2>
 {% endblock  %}
+
+{% block main %}
+<img src="{% static 'img/123.jpg' %}" class="main_img">
+<div class="main_block">
+    <p class="main_text">Текст</p>
+</div>
+{% endblock %}
